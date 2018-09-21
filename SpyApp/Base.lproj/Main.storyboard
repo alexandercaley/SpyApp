@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dhz-fj-3Fj" userLabel="input">
+                                <rect key="frame" x="16" y="55" width="268" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VoW-QQ-BP0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ncn-r9-aBt" userLabel="secret">
+                                <rect key="frame" x="292" y="55" width="67" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Lr-VR-7LK"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBu-dz-7V2">
+                                <rect key="frame" x="82" y="169" width="52" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cls-Ri-ty9"/>
+                                </constraints>
+                                <state key="normal" title="Encode"/>
+                                <connections>
+                                    <action selector="encodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ovV-VN-H4d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTF-51-Cx6">
+                                <rect key="frame" x="240" y="169" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ISi-9d-ZkZ"/>
+                                </constraints>
+                                <state key="normal" title="Decode"/>
+                                <connections>
+                                    <action selector="decodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mup-l5-fIr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5w-B5-gBN">
+                                <rect key="frame" x="61" y="93" width="94" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cNr-Cd-pmY"/>
+                                </constraints>
+                                <state key="normal" title="CaesarCipher"/>
+                                <connections>
+                                    <action selector="caesarCipherPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrT-s0-O8Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQ4-BL-LdA">
+                                <rect key="frame" x="225" y="93" width="85" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="26L-bU-o9D"/>
+                                </constraints>
+                                <state key="normal" title="AlphaCipher"/>
+                                <connections>
+                                    <action selector="alphaCipherPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wJ1-Gt-rpn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Output" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbg-UB-HCF" userLabel="output">
+                                <rect key="frame" x="16" y="207" width="343" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="4pB-Rw-zbB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZk-IB-eEW">
+                                <rect key="frame" x="292" y="33" width="50" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Up0-q5-zwu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phrase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynj-oH-NCx">
+                                <rect key="frame" x="16" y="33" width="54" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rPa-A0-nl1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0R-gr-7tj">
+                                <rect key="frame" x="44" y="131" width="128" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="f9s-CE-wNr"/>
+                                </constraints>
+                                <state key="normal" title="SubstitutionCipher"/>
+                                <connections>
+                                    <action selector="subCipherPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5cT-r6-o6s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jd-Xd-fdJ">
+                                <rect key="frame" x="209" y="131" width="117" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9bV-Ab-DKj"/>
+                                </constraints>
+                                <state key="normal" title="ArithmeticCipher"/>
+                                <connections>
+                                    <action selector="arithCipherPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKd-aR-7nY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dhz-fj-3Fj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="32z-cJ-uuD"/>
+                            <constraint firstItem="nTF-51-Cx6" firstAttribute="leading" secondItem="QBu-dz-7V2" secondAttribute="trailing" constant="106" id="5pc-cc-Wxz"/>
+                            <constraint firstItem="ynj-oH-NCx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="6G1-bH-KHI"/>
+                            <constraint firstItem="DQ4-BL-LdA" firstAttribute="top" secondItem="dhz-fj-3Fj" secondAttribute="bottom" constant="8" id="A23-CC-va3"/>
+                            <constraint firstItem="LZk-IB-eEW" firstAttribute="leading" secondItem="dhz-fj-3Fj" secondAttribute="trailing" constant="8" id="AlH-Ay-A5J"/>
+                            <constraint firstItem="Ncn-r9-aBt" firstAttribute="top" secondItem="LZk-IB-eEW" secondAttribute="bottom" constant="1" id="BpX-tK-H0b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ncn-r9-aBt" secondAttribute="trailing" constant="16" id="Drg-iA-3yn"/>
+                            <constraint firstItem="Ncn-r9-aBt" firstAttribute="top" secondItem="LZk-IB-eEW" secondAttribute="bottom" constant="1" id="EWY-1I-y4z"/>
+                            <constraint firstItem="2jd-Xd-fdJ" firstAttribute="top" secondItem="DQ4-BL-LdA" secondAttribute="bottom" constant="8" id="F4Y-fh-Z1S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dhz-fj-3Fj" secondAttribute="trailing" constant="91" id="NVO-6w-lBm"/>
+                            <constraint firstItem="xbg-UB-HCF" firstAttribute="top" secondItem="QBu-dz-7V2" secondAttribute="bottom" constant="8" id="UgR-99-LMu"/>
+                            <constraint firstItem="i0R-gr-7tj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-79.5" id="WBY-ea-8us"/>
+                            <constraint firstItem="xbg-UB-HCF" firstAttribute="top" secondItem="nTF-51-Cx6" secondAttribute="bottom" constant="8" id="YO1-Kx-86E"/>
+                            <constraint firstItem="dhz-fj-3Fj" firstAttribute="top" secondItem="ynj-oH-NCx" secondAttribute="bottom" constant="1" id="aaw-kb-7Bk"/>
+                            <constraint firstItem="QBu-dz-7V2" firstAttribute="top" secondItem="i0R-gr-7tj" secondAttribute="bottom" constant="8" id="fO5-Kj-xVu"/>
+                            <constraint firstItem="F5w-B5-gBN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-79.5" id="gcG-7V-zZI"/>
+                            <constraint firstItem="i0R-gr-7tj" firstAttribute="top" secondItem="F5w-B5-gBN" secondAttribute="bottom" constant="8" id="gr9-BR-cdr"/>
+                            <constraint firstItem="DQ4-BL-LdA" firstAttribute="leading" secondItem="F5w-B5-gBN" secondAttribute="trailing" constant="70" id="kRU-MI-ZR6"/>
+                            <constraint firstItem="Ncn-r9-aBt" firstAttribute="leading" secondItem="dhz-fj-3Fj" secondAttribute="trailing" constant="8" id="kpd-Dy-t2L"/>
+                            <constraint firstItem="nTF-51-Cx6" firstAttribute="top" secondItem="2jd-Xd-fdJ" secondAttribute="bottom" constant="8" id="nCd-wk-E9N"/>
+                            <constraint firstItem="LZk-IB-eEW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="nmg-R8-rGF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LZk-IB-eEW" secondAttribute="trailing" constant="33" id="nts-7y-Vgr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xbg-UB-HCF" secondAttribute="trailing" constant="16" id="otd-Zj-1FP"/>
+                            <constraint firstItem="xbg-UB-HCF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pqe-c5-mJk"/>
+                            <constraint firstItem="ynj-oH-NCx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tt3-yb-oQ4"/>
+                            <constraint firstItem="F5w-B5-gBN" firstAttribute="top" secondItem="dhz-fj-3Fj" secondAttribute="bottom" constant="8" id="vkc-ap-o4S"/>
+                            <constraint firstItem="QBu-dz-7V2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-79.5" id="w2k-Jc-xZm"/>
+                            <constraint firstItem="2jd-Xd-fdJ" firstAttribute="leading" secondItem="i0R-gr-7tj" secondAttribute="trailing" constant="37" id="xiL-V1-2YY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="input" destination="dhz-fj-3Fj" id="JPf-fc-BCf"/>
+                        <outlet property="output" destination="xbg-UB-HCF" id="Z4y-qT-P9O"/>
+                        <outlet property="secret" destination="Ncn-r9-aBt" id="l3u-Jz-SUc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>

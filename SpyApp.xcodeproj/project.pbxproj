@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4277DE82151AB58009DD5D0 /* SubsititutionCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4277DE72151AB57009DD5D0 /* SubsititutionCipher.swift */; };
+		A4668DBE213C8B3000EEE253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4668DBD213C8B3000EEE253 /* AppDelegate.swift */; };
+		A4668DC0213C8B3000EEE253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4668DBF213C8B3000EEE253 /* ViewController.swift */; };
+		A4668DC3213C8B3000EEE253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4668DC1213C8B3000EEE253 /* Main.storyboard */; };
+		A4668DC5213C8B3000EEE253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4668DC4213C8B3000EEE253 /* Assets.xcassets */; };
+		A4668DC8213C8B3000EEE253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4668DC6213C8B3000EEE253 /* LaunchScreen.storyboard */; };
+		A4668DD3213C8B3100EEE253 /* SpyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4668DD2213C8B3100EEE253 /* SpyAppTests.swift */; };
+		A4668DDE213C8C3400EEE253 /* CipherFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4668DDD213C8C3400EEE253 /* CipherFactory.swift */; };
+		A4668DE0213C8C7100EEE253 /* CaesarCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4668DDF213C8C7100EEE253 /* CaesarCipher.swift */; };
+		A493B33B2154426000F8043D /* ArithmeticCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493B33A2154426000F8043D /* ArithmeticCipher.swift */; };
+		A4AA8CAE214709BB00CC1279 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA8CAD214709BB00CC1279 /* Cipher.swift */; };
+		A4AA8CB021470A7400CC1279 /* AlphanumericCaesarCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA8CAF21470A7400CC1279 /* AlphanumericCaesarCipher.swift */; };
+		A4AA8CB22147109500CC1279 /* ErrorCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA8CB12147109500CC1279 /* ErrorCipher.swift */; };
+		A4F70CA2215468E7009E3A6A /* CaesarCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F70CA1215468E7009E3A6A /* CaesarCipherTests.swift */; };
+		A4F70CA421547727009E3A6A /* AlphaNumericCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F70CA321547727009E3A6A /* AlphaNumericCipherTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4668DCF213C8B3100EEE253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4668DB2213C8B3000EEE253 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4668DB9213C8B3000EEE253;
+			remoteInfo = SpyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4277DE72151AB57009DD5D0 /* SubsititutionCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsititutionCipher.swift; sourceTree = "<group>"; };
+		A4668DBA213C8B3000EEE253 /* SpyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4668DBD213C8B3000EEE253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4668DBF213C8B3000EEE253 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4668DC2213C8B3000EEE253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4668DC4213C8B3000EEE253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4668DC7213C8B3000EEE253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4668DC9213C8B3000EEE253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4668DCE213C8B3100EEE253 /* SpyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4668DD2213C8B3100EEE253 /* SpyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyAppTests.swift; sourceTree = "<group>"; };
+		A4668DD4213C8B3100EEE253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4668DDD213C8C3400EEE253 /* CipherFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherFactory.swift; sourceTree = "<group>"; };
+		A4668DDF213C8C7100EEE253 /* CaesarCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipher.swift; sourceTree = "<group>"; };
+		A493B33A2154426000F8043D /* ArithmeticCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCipher.swift; sourceTree = "<group>"; };
+		A4AA8CAD214709BB00CC1279 /* Cipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cipher.swift; sourceTree = "<group>"; };
+		A4AA8CAF21470A7400CC1279 /* AlphanumericCaesarCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphanumericCaesarCipher.swift; sourceTree = "<group>"; };
+		A4AA8CB12147109500CC1279 /* ErrorCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCipher.swift; sourceTree = "<group>"; };
+		A4F70CA1215468E7009E3A6A /* CaesarCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipherTests.swift; sourceTree = "<group>"; };
+		A4F70CA321547727009E3A6A /* AlphaNumericCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaNumericCipherTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4668DB7213C8B3000EEE253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4668DCB213C8B3100EEE253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4668DB1213C8B3000EEE253 = {
+			isa = PBXGroup;
+			children = (
+				A4F70CA321547727009E3A6A /* AlphaNumericCipherTests.swift */,
+				A4668DBC213C8B3000EEE253 /* SpyApp */,
+				A4668DD1213C8B3100EEE253 /* SpyAppTests */,
+				A4668DBB213C8B3000EEE253 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4668DBB213C8B3000EEE253 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4668DBA213C8B3000EEE253 /* SpyApp.app */,
+				A4668DCE213C8B3100EEE253 /* SpyAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4668DBC213C8B3000EEE253 /* SpyApp */ = {
+			isa = PBXGroup;
+			children = (
+				A4668DBD213C8B3000EEE253 /* AppDelegate.swift */,
+				A4277DE72151AB57009DD5D0 /* SubsititutionCipher.swift */,
+				A4668DBF213C8B3000EEE253 /* ViewController.swift */,
+				A4AA8CB12147109500CC1279 /* ErrorCipher.swift */,
+				A4668DC1213C8B3000EEE253 /* Main.storyboard */,
+				A4668DDD213C8C3400EEE253 /* CipherFactory.swift */,
+				A4668DDF213C8C7100EEE253 /* CaesarCipher.swift */,
+				A4F70CA1215468E7009E3A6A /* CaesarCipherTests.swift */,
+				A493B33A2154426000F8043D /* ArithmeticCipher.swift */,
+				A4AA8CAD214709BB00CC1279 /* Cipher.swift */,
+				A4AA8CAF21470A7400CC1279 /* AlphanumericCaesarCipher.swift */,
+				A4668DC4213C8B3000EEE253 /* Assets.xcassets */,
+				A4668DC6213C8B3000EEE253 /* LaunchScreen.storyboard */,
+				A4668DC9213C8B3000EEE253 /* Info.plist */,
+			);
+			path = SpyApp;
+			sourceTree = "<group>";
+		};
+		A4668DD1213C8B3100EEE253 /* SpyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4668DD2213C8B3100EEE253 /* SpyAppTests.swift */,
+				A4668DD4213C8B3100EEE253 /* Info.plist */,
+			);
+			path = SpyAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4668DB9213C8B3000EEE253 /* SpyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4668DD7213C8B3100EEE253 /* Build configuration list for PBXNativeTarget "SpyApp" */;
+			buildPhases = (
+				A4668DB6213C8B3000EEE253 /* Sources */,
+				A4668DB7213C8B3000EEE253 /* Frameworks */,
+				A4668DB8213C8B3000EEE253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpyApp;
+			productName = SpyApp;
+			productReference = A4668DBA213C8B3000EEE253 /* SpyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4668DCD213C8B3100EEE253 /* SpyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4668DDA213C8B3100EEE253 /* Build configuration list for PBXNativeTarget "SpyAppTests" */;
+			buildPhases = (
+				A4668DCA213C8B3100EEE253 /* Sources */,
+				A4668DCB213C8B3100EEE253 /* Frameworks */,
+				A4668DCC213C8B3100EEE253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4668DD0213C8B3100EEE253 /* PBXTargetDependency */,
+			);
+			name = SpyAppTests;
+			productName = SpyAppTests;
+			productReference = A4668DCE213C8B3100EEE253 /* SpyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4668DB2213C8B3000EEE253 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Alexander Caley";
+				TargetAttributes = {
+					A4668DB9213C8B3000EEE253 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+					A4668DCD213C8B3100EEE253 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A4668DB9213C8B3000EEE253;
+					};
+				};
+			};
+			buildConfigurationList = A4668DB5213C8B3000EEE253 /* Build configuration list for PBXProject "SpyApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4668DB1213C8B3000EEE253;
+			productRefGroup = A4668DBB213C8B3000EEE253 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4668DB9213C8B3000EEE253 /* SpyApp */,
+				A4668DCD213C8B3100EEE253 /* SpyAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4668DB8213C8B3000EEE253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4668DC8213C8B3000EEE253 /* LaunchScreen.storyboard in Resources */,
+				A4668DC5213C8B3000EEE253 /* Assets.xcassets in Resources */,
+				A4668DC3213C8B3000EEE253 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4668DCC213C8B3100EEE253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4668DB6213C8B3000EEE253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AA8CB021470A7400CC1279 /* AlphanumericCaesarCipher.swift in Sources */,
+				A4668DDE213C8C3400EEE253 /* CipherFactory.swift in Sources */,
+				A4668DC0213C8B3000EEE253 /* ViewController.swift in Sources */,
+				A4AA8CB22147109500CC1279 /* ErrorCipher.swift in Sources */,
+				A493B33B2154426000F8043D /* ArithmeticCipher.swift in Sources */,
+				A4AA8CAE214709BB00CC1279 /* Cipher.swift in Sources */,
+				A4277DE82151AB58009DD5D0 /* SubsititutionCipher.swift in Sources */,
+				A4668DBE213C8B3000EEE253 /* AppDelegate.swift in Sources */,
+				A4668DE0213C8C7100EEE253 /* CaesarCipher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4668DCA213C8B3100EEE253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F70CA421547727009E3A6A /* AlphaNumericCipherTests.swift in Sources */,
+				A4668DD3213C8B3100EEE253 /* SpyAppTests.swift in Sources */,
+				A4F70CA2215468E7009E3A6A /* CaesarCipherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4668DD0213C8B3100EEE253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4668DB9213C8B3000EEE253 /* SpyApp */;
+			targetProxy = A4668DCF213C8B3100EEE253 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4668DC1213C8B3000EEE253 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4668DC2213C8B3000EEE253 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4668DC6213C8B3000EEE253 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4668DC7213C8B3000EEE253 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4668DD5213C8B3100EEE253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4668DD6213C8B3100EEE253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4668DD8213C8B3100EEE253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9UD9RX3CY;
+				INFOPLIST_FILE = SpyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandercaley.SpyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4668DD9213C8B3100EEE253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9UD9RX3CY;
+				INFOPLIST_FILE = SpyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandercaley.SpyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4668DDB213C8B3100EEE253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandercaley.SpyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpyApp.app/SpyApp";
+			};
+			name = Debug;
+		};
+		A4668DDC213C8B3100EEE253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandercaley.SpyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpyApp.app/SpyApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4668DB5213C8B3000EEE253 /* Build configuration list for PBXProject "SpyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4668DD5213C8B3100EEE253 /* Debug */,
+				A4668DD6213C8B3100EEE253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4668DD7213C8B3100EEE253 /* Build configuration list for PBXNativeTarget "SpyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4668DD8213C8B3100EEE253 /* Debug */,
+				A4668DD9213C8B3100EEE253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4668DDA213C8B3100EEE253 /* Build configuration list for PBXNativeTarget "SpyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4668DDB213C8B3100EEE253 /* Debug */,
+				A4668DDC213C8B3100EEE253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4668DB2213C8B3000EEE253 /* Project object */;
+}
